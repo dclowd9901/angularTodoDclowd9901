@@ -1,0 +1,44 @@
+.edit {
+  cursor: pointer;
+  color: #31A8BC;
+  @include transition(color 0.3s);
+
+  &:hover {
+    color: #1D4458;
+  }
+}
+
+.filters {
+  padding: 0 0 20px ;
+}
+
+.todos {
+  padding: 0 0 15px;
+  list-style: none;
+
+  .todo {
+    padding-bottom: 5px;
+
+    &.done .title {
+      text-decoration: line-through;
+    }
+
+    &.current {
+      font-weight: bold; 
+    }
+  }
+}
+
+.edit-mode {
+  display: none;
+}
+
+.is-editing {
+  .display-mode {
+    display: none;
+  }
+
+  .edit-mode {
+    display: block;
+  }
+}
